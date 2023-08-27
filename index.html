@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Ordering Website</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <nav class="menu">
+            <div>
+                <span class=" address nav-action-button"> 
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="address-inner">
+                        Your Address
+                </span>
+            </div>
+            <div>
+                <span class="search nav-action-button curved button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Search
+                </span>
+                <span class="offers nav-action-button curved button">
+                    <i class="fa-solid fa-tags"></i>
+                    Offers
+                </span>
+                <span class=" items nav-action-button curved button">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-items-count">0</span>
+                    Items
+                </span>
+                <span class="account nav-action-button curved button">
+                    <i class="fa-solid fa-circle-user"></i>
+                    Account
+                </span>
+            </div>
+        </nav>
+        <div class="sidebar-and-content">
+        <div class ="left-sidebar">
+            <div class="left-sidebar-item"><a href="#">About</a></div>
+            <div class="left-sidebar-item"><a href="#">Services</a></div>
+            <div class="left-sidebar-item"><a href="#">Your Orders</a></div>
+            <div class="left-sidebar-item"><a href="#">Wishlists</a></div>
+            <div class="left-sidebar-item"><a href="#">Cart</a></div>
+            <div class="left-sidebar-item"><a href="#">Contact</a></div>
+            <div class="left-sidebar-item"><a href="#">Checkout</a></div>
+        </div>
+        <div class="main-or-cart">
+        <div class ="main"></div>
+        <div class="cart d-none">
+            <h2>Cart items</h2>
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                    <th>Item</th>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <button class="checkout nav-action-button curved-button checkout-button">Checkout</button>
+        </div>
+        </div>
+        <div class ="right-sidebar">
+            <div class="main-sidebar">
+                <h3> Cake Varieties </h3>
+                <div class="categories-list"></div>
+
+            </div>
+            <div class="cart-sidebar d-none">
+                <div>
+                Total items: <span class="total-items"></span>
+            </div>
+            <div>
+                Total Price: Rs.<span class="total-price"></span>
+            </div>
+            <div>
+                Free delievery above Rs.1000
+            </div>
+            <button class="checkout nav-action-button curved-button checkout-button">Checkout</button>
+            </div>
+        </div>
+        </div>
+    </main>
+    <script src="index.js"  type = "module"></script>
+</body>
+</html>
